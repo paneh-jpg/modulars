@@ -2,6 +2,17 @@
   box-sizing: border-box;
 }
 
+:root {
+  /* Color button  */
+  --primary-color-black-green: #143c3c;
+
+  /* Color heading  */
+  --Primary-color-black: #152427;
+
+  /* Desc color  */
+  --text-color-light-gray: #7d8188;
+}
+
 html,
 body {
   scroll-behavior: smooth;
@@ -14,4 +25,87 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Public Sans", sans-serif;
+}
+
+/* Common  */
+.btn {
+  display: inline-block;
+  min-width: 173px;
+  height: 57px;
+  border-radius: 40px;
+  text-align: center;
+  align-content: center;
+  background-color: var(--primary-color-black-green);
+  color: #fff;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.56;
+}
+
+.btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+a {
+  text-decoration: none;
+}
+.container {
+  width: 1170px;
+  min-height: 100vh;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-heading {
+  color: var(--Primary-color-black);
+  font-family: Poppins, sans-serif;
+  font-size: 4.2rem;
+  font-weight: 600;
+  line-height: 1.24;
+}
+
+.section-desc {
+  color: var(--text-color-light-gray);
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.62;
+}
+
+/* Header Top  */
+.header-top {
+  margin-top: 28px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 406.22px;
+}
+
+.navbar__list {
+  display: flex;
+  gap: 38px;
+}
+
+.header-action {
+  margin-left: auto;
+}
+
+.navbar__link {
+  color: #575d5e;
+  font-family: "Public Sans";
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.56;
+}
+
+.navbar__link--active,
+.navbar__link:hover {
+  color: #152427;
+  text-shadow: 1px 0 0 currentColor;
 }
