@@ -520,9 +520,17 @@ a {
 }
 
 .stats-card__team {
+  position: relative;
   margin-top: 19px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+}
+
+.stats-card__team-icon {
+  position: absolute;
+  left: 2px;
+  top: -15px;
 }
 
 .stats-card__team-title {
@@ -572,10 +580,10 @@ a {
 }
 
 .mem-avt {
-  width: 10px;
-  height: 10px;
+  width: 16px;
+  height: 16px;
   border-radius: 16px;
-  margin-left: -3px;
+  margin-left: -6px;
   border: 1px solid #fff;
 }
 
@@ -592,17 +600,12 @@ a {
   display: flex;
   gap: 24px;
   align-items: center;
-  position: relative;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #83a17d;
 }
 
-.about__stat-item::after {
-  bottom: -20px;
-  position: absolute;
-  content: " ";
-  display: inline-block;
-  width: 485px;
-  height: 1px;
-  background-color: #83a17d;
+.about__stat-item:last-child {
+  margin-top: 38px;
 }
 
 .about__stat-value {
@@ -703,7 +706,7 @@ a {
 .process__name {
   width: 276px;
   padding-right: 100px;
-  padding-top: 16px;
+  padding-top: 28px;
   color: var(--primary-color-black, #152427);
   font-family: Poppins;
   font-size: 2.2rem;
@@ -745,6 +748,22 @@ a {
 .project-preview {
   margin-top: 140px;
   background-color: var(--primary-color-black-green, #143c3c);
+  position: relative;
+}
+
+.video-fl,
+.video-path {
+  position: absolute;
+}
+
+.video-fl {
+  top: 207px;
+  right: 149.28px;
+}
+
+.video-path {
+  top: 114px;
+  right: 146px;
 }
 
 .project-preview__inner {
@@ -788,7 +807,12 @@ a {
 }
 
 .next-project {
+  cursor: pointer;
   margin: 22px 0;
+}
+
+.project-link:hover {
+  cursor: pointer;
 }
 
 .project-link:hover .next-project path {
@@ -944,7 +968,8 @@ a {
 
 .blog-card__heading {
   padding-left: 5px;
-  width: 346px;
+  width: 360px;
+  height: 95px;
   margin-top: 13px;
   color: var(--Primary-color-black-green, #143c3c);
   font-family: Poppins;
@@ -959,19 +984,18 @@ a {
   padding-right: 49px;
 }
 
-.blog-card__heading::after {
+/* .blog-card__heading::after {
   margin-top: 14px;
   content: "";
   display: inline-block;
   width: 300px;
   height: 1px;
   background: #c4c4c4;
-}
+} */
 
 .blog-card__date {
-  margin-top: 10px;
-  margin-right: 20px;
-  margin-bottom: 30px;
+  margin: 0 33px 15px 20px;
+
   text-align: end;
   display: block;
   margin-left: auto;
@@ -980,6 +1004,9 @@ a {
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.2;
+  width: 300px;
+  border-top: 1px solid #c4c4c4;
+  padding-top: 20px;
 }
 
 /* Footer  */
