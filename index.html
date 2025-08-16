@@ -93,6 +93,9 @@
 
     <!-- Style CSS  -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Animation  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Header Fixed  -->
@@ -190,7 +193,9 @@
         <section class="hero__inner">
           <!-- Hero Content  -->
           <div class="hero__content">
-            <h1 class="hero__heading">We’re a creative design agency.</h1>
+            <h1 class="hero__heading" data-aos="fade-right">
+              We’re a creative design agency.
+            </h1>
             <p class="hero__desc">
               A brilliant, modular agency template for startup’s build yours
               toady.
@@ -345,6 +350,7 @@
             <div class="partners__item">
               <a href="#!">
                 <img
+                  data-aos="fade-up-right"
                   class="partners__item"
                   src="./assets/img/Google.svg"
                   alt="Google"
@@ -355,6 +361,7 @@
             <div class="partners__item">
               <a href="#!">
                 <img
+                  data-aos="fade-up-right"
                   class="partners__item"
                   src="./assets/img/slack.svg"
                   alt="slack"
@@ -365,6 +372,7 @@
             <div class="partners__item">
               <a href="#!">
                 <img
+                  data-aos="fade-up-right"
                   class="partners__item"
                   src="./assets/img/Agworld-logo.svg"
                   alt=""
@@ -373,6 +381,7 @@
               </a>
               <a href="#!">
                 <img
+                  data-aos="fade-up-right"
                   class="partners__item"
                   src="./assets/img/Agworld.svg"
                   alt="Ag-World"
@@ -383,6 +392,7 @@
             <div class="partners__item">
               <a href="#!">
                 <img
+                  data-aos="fade-up-right"
                   class="partners__item"
                   src="./assets/img/RioTinto.svg"
                   alt="RioTinto"
@@ -393,6 +403,7 @@
             <div class="partners__item">
               <a href="#!">
                 <img
+                  data-aos="fade-up-right"
                   class="partners__item"
                   src="./assets/img/heroku.svg"
                   alt="heroku"
@@ -1102,5 +1113,11 @@
         </div>
       </div>
     </footer>
+
+    <!-- Java Script  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

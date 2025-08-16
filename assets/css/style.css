@@ -688,7 +688,7 @@ a {
   opacity: 0;
   scale: 0;
   transform-origin: bottom;
-  transition: all 0.5s ease;
+  transition: all 0.8s ease;
 }
 
 .process__step:hover .process__image img {
